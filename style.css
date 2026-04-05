@@ -1,0 +1,233 @@
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        .hero {
+            background: linear-gradient(rgba(2, 17, 99, 0.9), rgba(124, 88, 206, 0.9)),
+                        url('https://gestion.pe/resizer/v2/JBAE3E6SYZCW5ILP7KDQVIJNTY.jpg?auth=a4049f73956e8b011efadd9eb9c9de66feee1b2ceb9140f70d47d3b71ae38db5&width=580&height=330&quality=75&smart=true');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            position: relative;
+        }
+
+        .hero-content h1 {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+            text-shadow: 3px 3px 6px rgba(0,0,0,0.5);
+        }
+
+        .hero-content p {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .cta-button {
+            background: #7e6dca;
+            color: #000000;
+            padding: 1.2rem 3rem;
+            font-size: 1.3rem;
+            font-weight: bold;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(253,203,110,0.4);
+        }
+
+        section {
+            padding: 5rem 2rem;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .coverage {
+            background: #fff;
+            text-align: center;
+        }
+
+        .coverage h2 {
+            font-size: 3rem;
+            color: #181818;
+            margin-bottom: 2rem;
+        }
+
+        .districts-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .district-card {
+            background: linear-gradient(135deg, #9f74e4, #ac97dd);
+            color: white;
+            padding: 2rem;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .district-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .district-card::before {
+            content: '🚀';
+            position: absolute;
+            top: -20px;
+            right: -20px;
+            font-size: 3rem;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float { 
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+
+        .district-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .district-name {
+            font-size: 1.8rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+
+        .delivery-info {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        .menu {
+            background: linear-gradient(135deg, #667eea 0%, #574b9c 100%);
+            color: white;
+        }
+
+        .menu h2 {
+            font-size: 3rem;
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+        }
+
+        .menu-item {
+            background: rgba(255,255,255,0.1);
+            padding: 2rem;
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.2);
+            transition: all 0.3s ease;
+        }
+
+        .menu-item:hover {
+            transform: scale(1.05);
+            background: rgba(255,255,255,0.2);
+        }
+
+        .menu-price {
+            font-size: 2.5rem;
+            color: #fdfcfd;
+            font-weight: bold;
+            margin: 1rem 0;
+        }
+
+        .promotions {
+            background: #ffffff;
+            text-align: center;
+        }
+
+        .promo-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .promo-card {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 20px;
+            box-shadow: 0 15px 40px rgba(41, 15, 15, 0.1);
+            position: relative;
+        }
+
+        .promo-badge {
+            position: absolute;
+            top: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #000000;
+            color: white;
+            padding: 0.5rem 2rem;
+            border-radius: 25px;
+            font-weight: bold;
+        }
+
+        .map-container {
+            height: 500px;
+            background: #e0e0e0;
+            border-radius: 20px;
+            margin-top: 3rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+
+        .order-section {
+            background: #8577b8;
+            color: rgb(100, 0, 0);
+            text-align: center;
+        }
+
+        .order-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+            margin-top: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            .hero-content h1 {
+                font-size: 2.5rem;
+            }
+            
+            .order-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .cta-button {
+                width: 100%;
+                max-width: 300px;
+            }
+        }
